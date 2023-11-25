@@ -2,9 +2,9 @@ from django import forms
 
 
 class ApplicationForm(forms.Form):
-    first_name = forms.CharField(max_length=80)
-    last_name = forms.CharField(max_length=80)
+    name = forms.CharField(max_length=80)
     email = forms.EmailField()
-    date = forms.DateField()
-    occupation = forms.CharField(max_length=80)
+    experience = forms.CharField(max_length=80)
+    self_intro = forms.CharField(max_length=80)
+    preference = forms.CharField(max_length=80)
 
